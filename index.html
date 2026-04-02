@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nunavathu Venkata Gowtham Naik — UI/UX Designer & Front-End Developer based in Andhra Pradesh, India. Specialising in user-centred design, interactive prototyping, and modern web interfaces. Open to international internship opportunities.">
+  <meta name="author" content="Nunavathu Venkata Gowtham Naik">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="keywords" content="UI/UX Designer, Frontend Developer, Figma, Portfolio, Internship, Web Design, Gowtham Naik">
+  <title>Gowtham Naik — UI/UX Designer &amp; Frontend Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Existing Stylesheet (UNTOUCHED) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ═══ PREMIUM BACKGROUND ENHANCEMENTS ═══ -->
+  <style>
+    /* --- Award-Winning Background System --- */
+
+    /* Noise texture overlay on entire page */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 256px 256px;
+    }
+
+    /* Global mesh gradient that follows scroll */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 80% 50% at 20% 40%, rgba(201,243,29,0.04) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 70% at 80% 20%, rgba(232,196,124,0.03) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 60% at 50% 80%, rgba(255,107,107,0.025) 0%, transparent 60%);
+      animation: meshShift 25s ease-in-out infinite alternate;
+    }
+
+    @keyframes meshShift {
+      0% { transform: scale(1) translate(0, 0); }
+      50% { transform: scale(1.15) translate(-3%, 3%); }
+      100% { transform: scale(1.05) translate(2%, -2%); }
+    }
+
+    /* Glowing orb system for hero */
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(80px);
+      mix-blend-mode: screen;
+    }
+
+    .hero-orb-1 {
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(201,243,29,0.12) 0%, rgba(201,243,29,0) 70%);
+      top: -15%;
+      right: -10%;
+      animation: orbFloat1 18s ease-in-out infinite;
+    }
+
+    .hero-orb-2 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(168,85,247,0.08) 0%, rgba(168,85,247,0) 70%);
+      bottom: -20%;
+      left: -5%;
+      animation: orbFloat2 22s ease-in-out infinite;
+    }
+
+    .hero-orb-3 {
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(232,196,124,0.07) 0%, rgba(232,196,124,0) 70%);
+      top: 50%;
+      left: 40%;
+      animation: orbFloat3 15s ease-in-out infinite;
+    }
+
+    .hero-orb-4 {
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(59,130,246,0.06) 0%, rgba(59,130,246,0) 70%);
+      top: 20%;
+      left: 15%;
+      animation: orbFloat1 20s ease-in-out infinite reverse;
+    }
+
+    @keyframes orbFloat1 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(30px, -50px) scale(1.1); }
+      50% { transform: translate(-20px, 30px) scale(0.95); }
+      75% { transform: translate(40px, 20px) scale(1.05); }
+    }
+
+    @keyframes orbFloat2 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(-40px, -30px) scale(1.15); }
+      66% { transform: translate(30px, 40px) scale(0.9); }
+    }
+
+    @keyframes orbFloat3 {
+      0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+      50% { transform: translate(50px, -40px) scale(1.2) rotate(5deg); }
+    }
+
+    /* Animated grid lines for depth */
+    .hero-depth-grid {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(201,243,29,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,243,29,0.015) 1px, transparent 1px);
+      background-size: 80px 80px;
+      mask-image: radial-gradient(ellipse 60% 60% at 50% 50%, black 0%, transparent 70%);
+      -webkit-mask-image: radial-gradient(ellipse 60% 60% at 50% 50%, black 0%, transparent 70%);
+      animation: gridPulse 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes gridPulse {
+      0% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+
+    /* Floating particles canvas */
+    #particles-canvas {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Section glow dividers */
+    .section-glow {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-glow), transparent);
+      position: relative;
+      overflow: visible;
+    }
+
+    .section-glow::after {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: linear-gradient(90deg, transparent, rgba(201,243,29,0.03), transparent);
+      filter: blur(20px);
+    }
+
+    /* Project thumbnail images */
+    .project-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .project-thumb .project-thumb-emoji {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Skill category labels */
+    .skills-category-label {
+      grid-column: 1 / -1;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      padding: 16px 0 4px;
+      border-bottom: 1px solid var(--glass-border);
+      margin-bottom: -4px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .skills-category-label::before {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    .skill-card .skill-desc {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-top: 8px;
+    }
+
+    /* Hero profile photo */
+    .hero-profile {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      flex-shrink: 0;
+    }
+
+    .hero-profile-ring {
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      background: conic-gradient(from 0deg, var(--accent), var(--warm), var(--coral), var(--accent));
+      animation: ringRotate 8s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes ringRotate {
+      to { transform: rotate(360deg); }
+    }
+
+    .hero-profile-ring::after {
+      content: '';
+      position: absolute;
+      inset: 3px;
+      border-radius: 50%;
+      background: var(--bg-deep);
+    }
+
+    .hero-profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      position: relative;
+      z-index: 2;
+      border: 3px solid rgba(255,255,255,0.08);
+    }
+
+    .hero-profile-glow {
+      position: absolute;
+      inset: -40px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,243,29,0.1) 0%, transparent 70%);
+      z-index: 0;
+      animation: profileGlow 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes profileGlow {
+      0% { transform: scale(0.9); opacity: 0.5; }
+      100% { transform: scale(1.1); opacity: 1; }
+    }
+
+    .hero-profile-badge {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      z-index: 3;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--bg-deep);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      box-shadow: 0 4px 20px var(--accent-glow);
+      border: 3px solid var(--bg-deep);
+    }
+
+    /* Hero split layout */
+    .hero-split {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: clamp(40px, 6vw, 100px);
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 80px;
+      position: relative;
+      z-index: var(--z-content);
+    }
+
+    .hero-text-col {
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* Section subtle gradient bg */
+    .section-aurora {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .section-aurora::before {
+      content: '';
+      position: absolute;
+      width: 150%;
+      height: 150%;
+      top: -25%;
+      left: -25%;
+      background: conic-gradient(from 180deg at 50% 50%,
+        rgba(201,243,29,0.02) 0deg,
+        rgba(232,196,124,0.015) 120deg,
+        rgba(168,85,247,0.01) 240deg,
+        rgba(201,243,29,0.02) 360deg
+      );
+      animation: auroraRotate 40s linear infinite;
+    }
+
+    @keyframes auroraRotate {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Responsive photo */
+    @media (max-width: 1024px) {
+      .hero-split {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .hero-profile {
+        width: 200px;
+        height: 200px;
+      }
+      .hero-eyebrow { justify-content: center; }
+      .hero-bottom { flex-direction: column; align-items: center; }
+      .hero-cta-group { align-items: center; }
+      .hero-description { text-align: center; }
+    }
+
+    @media (max-width: 768px) {
+      .hero-profile {
+        width: 160px;
+        height: 160px;
+      }
+      .hero-profile-badge {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ PARTICLES CANVAS ═══ -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ═══ LOADER ═══ -->
+  <div class="loader" id="loader">
+    <div class="loader-count" id="loader-count">0</div>
+    <div class="loader-bar-track">
+      <div class="loader-bar" id="loader-bar"></div>
+    </div>
+    <div class="loader-text">Loading Experience</div>
+  </div>
+
+  <!-- ═══ CURSOR ═══ -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-circle"></div>
+  <div class="cursor-label"></div>
+
+  <!-- ═══ SCROLL PROGRESS ═══ -->
+  <div class="scroll-progress"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-brand">
+      <span class="nav-brand-dot"></span> Gowtham Naik
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="#hero" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#featured">Work</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+    </div>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO — CINEMATIC WITH PHOTO
+       ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient hero-gradient-1"></div>
+      <div class="hero-gradient hero-gradient-2"></div>
+      <div class="hero-gradient hero-gradient-3"></div>
+      <div class="hero-grid-overlay"></div>
+      <div class="hero-depth-grid"></div>
+
+      <!-- Premium glowing orbs -->
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-orb hero-orb-4"></div>
+    </div>
+
+    <div class="hero-split">
+      <div class="hero-text-col">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-line"></span>
+          UI/UX Designer &amp; Front-End Developer — Focused on User-Centred Design
+        </div>
+
+        <h1 class="hero-heading">
+          <span class="line"><span class="line-inner">Crafting</span></span>
+          <span class="line"><span class="line-inner line-accent">Digital</span></span>
+          <span class="line"><span class="line-inner">Experiences</span></span>
+        </h1>
+
+        <div class="hero-bottom">
+          <p class="hero-description">
+            I'm <strong>Nunavathu Venkata Gowtham Naik</strong>, a passionate UI/UX Designer
+            based in Andhra Pradesh, India. I specialize in transforming complex problems into elegant,
+            <strong>user-centred designs</strong> and seamless interactive prototypes
+            — ensuring every digital experience feels intuitive and visually stunning.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#featured" class="btn btn-primary btn-magnetic">
+              View My Work <span class="btn-arrow">→</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost btn-magnetic">
+              Get in Touch <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Photo -->
+      <div class="hero-profile">
+        <div class="hero-profile-glow"></div>
+        <div class="hero-profile-ring"></div>
+        <img src="asset/ggowtham.jpeg" alt="Nunavathu Venkata Gowtham Naik — QA Game Tester" loading="eager">
+        <div class="hero-profile-badge">✦</div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="hero-scroll-line"></div>
+      <span class="hero-scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE ═══ -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">User Research</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Prototyping</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Interaction Design</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Design Systems</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Web Design</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Wireframing</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Front-End Dev</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Accessibility</span>
+      <span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+       ═══════════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="section-aurora"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="section-label-line"></span> About Me
+        </div>
+        <h2 class="section-title">I break things<br>so <span class="accent">you don't have to</span></h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-visual">
+          <div class="about-image-container">
+            <img src="asset/ggowtham.jpeg" alt="Gowtham Naik" style="width:100%;height:100%;object-fit:cover;">
+            <div class="about-image-overlay"></div>
+          </div>
+
+          <div class="about-float-card about-card-1">
+            <div class="icon">✨</div>
+            <div class="text">
+              <strong>Creative Thinker</strong>
+              <span>Problem Solving</span>
+            </div>
+          </div>
+
+          <div class="about-float-card about-card-2">
+            <div class="icon">💻</div>
+            <div class="text">
+              <strong>Developer</strong>
+              <span>Bridging gap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="about-text">
+            I am <strong>Nunavathu Venkata Gowtham Naik</strong>, a passionate UI/UX Designer 
+            and Front-End Developer based in <strong>Andhra Pradesh, India</strong>. 
+            I specialise in transforming complex problems into elegant, <em>user-centred designs</em>,
+            ensuring every product delivers both aesthetic beauty and functional clarity.
+          </p>
+          <p class="about-text">
+            With a <strong>B.Tech in Computer Science &amp;
+            Engineering (2021–2025)</strong> and a <strong>CGPA of 8.0</strong>, I
+            combine strong design fundamentals with robust technical execution.
+            Proficient in <em>Figma, HTML, CSS, and JavaScript</em> —
+            I understand systems at both a visual and code level, bridging the gap 
+            between <em>imaginative design concepts</em> and fully functioning user interfaces.
+          </p>
+          <p class="about-text">
+            By combining empathy-driven research, meticulous wireframing, and 
+            high-fidelity prototyping, I craft digital journeys that delight users.
+            Whether I'm building a mobile app from scratch or iterating on an existing design system,
+            I am ready to contribute to a world-class product team.
+          </p>
+
+          <div class="about-stats-row">
+            <div class="about-stat">
+              <div class="about-stat-number" data-count="15" data-suffix="+">0</div>
+              <div class="about-stat-label">Projects Completed</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-number" data-count="3" data-suffix="+">0</div>
+              <div class="about-stat-label">Years Designing</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-number" data-count="4" data-suffix="">0</div>
+              <div class="about-stat-label">Certifications</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-glow"></div>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS
+       ═══════════════════════════════════════════ -->
+  <section class="section" id="skills" style="background:var(--bg-primary);border-top:1px solid var(--glass-border);border-bottom:1px solid var(--glass-border);">
+    <div class="section-aurora"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="section-label-line"></span> Toolkit
+        </div>
+        <h2 class="section-title">Skills &amp; <span class="accent">Expertise</span></h2>
+        <p class="section-subtitle">A multidisciplinary toolset bridging the gap between empathetic user research, pixel-perfect design, and front-end execution.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- ── Category: User Experience ── -->
+        <div class="skills-category-label">User Experience</div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🧠</div>
+          <div class="skill-name">User Research</div>
+          <div class="skill-level">Advanced</div>
+          <div class="skill-desc">Conducting user interviews, usability testing, and defining user personas and journey maps.</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="88"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📝</div>
+          <div class="skill-name">Wireframing</div>
+          <div class="skill-level">Advanced</div>
+          <div class="skill-desc">Creating low-fidelity layout concepts to rapidly iterate and define information architecture.</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="90"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📋</div>
+          <div class="skill-name">Usability Testing</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-desc">Designing test plans to validate prototypes and gathering actionable user feedback.</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="78"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔄</div>
+          <div class="skill-name">Interaction Design</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-desc">Crafting micro-interactions and smooth transitional experiences for digital interfaces.</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="75"></div></div>
+        </div>
+
+        <!-- ── Category: User Interface ── -->
+        <div class="skills-category-label">User Interface</div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <div class="skill-name">Visual Design</div>
+          <div class="skill-level">Advanced</div>
+          <div class="skill-desc">Establishing typography networks, color theory execution, and modern aesthetic styling.</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="92"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📱</div>
+          <div class="skill-name">App Design</div>
+          <div class="skill-level">Advanced</div>
+          <div class="skill-desc">Designing native and cross-platform mobile application interfaces (iOS and Android).</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="85"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🧩</div>
+          <div class="skill-name">Design Systems</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-desc">Building robust component libraries with UI states and defined stylistic tokens.</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="80"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">✨</div>
+          <div class="skill-name">Prototyping</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-desc">Building rapid, interactive prototypes to demonstrate flow and visual interactions.</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="75"></div></div>
+        </div>
+
+        <!-- ── Category: Technical Skills ── -->
+        <div class="skills-category-label">Tools & Technology</div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🖋️</div>
+          <div class="skill-name">Figma</div>
+          <div class="skill-level">Advanced</div>
+          <div class="skill-desc">Advanced auto-layout, variables, interactive components, and collaborative ideation.</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="95"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <div class="skill-name">HTML / CSS / JS</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-desc">Translating beautiful designs into responsive, accessible code structures.</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="75"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <div class="skill-name">Framer / Webflow</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-desc">No-code tools for bringing websites to life with complex layouts and animations.</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="72"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📊</div>
+          <div class="skill-name">Adobe Creative Suite</div>
+          <div class="skill-level">Advanced</div>
+          <div class="skill-desc">Photoshop and Illustrator for vector graphics and image adjustments.</div>
+          <div class="skill-bar-mini"><div class="skill-bar-fill" data-fill="85"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-glow"></div>
+
+  <!-- ═══════════════════════════════════════════
+       FEATURED — AI Mental Health Companion
+       ═══════════════════════════════════════════ -->
+  <section class="section featured-project" id="featured">
+    <div class="section-aurora"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="section-label-line"></span> Featured Work
+        </div>
+        <h2 class="section-title">UX/UI Case <span class="accent">Study</span></h2>
+      </div>
+
+      <div class="featured-layout">
+        <div class="featured-visual">
+          <div class="featured-mockup">
+            <div class="featured-phone">
+              <div class="phone-status"></div>
+              <div class="phone-block phone-block-sm phone-block-accent"></div>
+              <div class="phone-block phone-block-lg"></div>
+              <div class="phone-block phone-block-md phone-block-accent"></div>
+              <div class="phone-block phone-block-sm"></div>
+              <div class="phone-block phone-block-md"></div>
+            </div>
+            <div class="featured-phone">
+              <div class="phone-status"></div>
+              <div class="phone-block phone-block-md"></div>
+              <div class="phone-block phone-block-sm phone-block-accent"></div>
+              <div class="phone-block phone-block-lg phone-block-accent"></div>
+              <div class="phone-block phone-block-sm"></div>
+            </div>
+          </div>
+          <div class="featured-visual-overlay"></div>
+          <span class="featured-badge">★ Featured</span>
+        </div>
+
+        <div class="featured-content">
+          <span class="featured-tag">Mobile App · UX Research · Interaction Design</span>
+          <h3 class="featured-title">MindWell — AI Mental Health Companion</h3>
+          <p class="featured-desc">
+            <strong>The Problem:</strong> Existing mental health apps often feel clinical, overwhelming,
+            and difficult to navigate during moments of high stress or anxiety. Users needed a
+            companion app that felt calming and immediately accessible.
+            <br><br>
+            <strong>The Solution:</strong> Designing "MindWell", a visually soothing and intuitive
+            companion app. By utilizing a soft color palette, seamless micro-interactions,
+            and progressive disclosure of complex features, we reduced cognitive load significantly.
+            <br><br>
+            <strong>My Role:</strong> Conducted ethnographic user research with 25+ participants → 
+            Designed wireframes and user flows → Built high-fidelity interactive prototypes in Figma 
+            → Validated design decisions through A/B testing → Ensured WCAG AA accessibility standard compliance.
+            <br><br>
+            <strong>Outcome:</strong> Re-designed crisis-response flow leading to a 40% faster time-to-action.
+            Achieved a 95% satisfaction score amongst tested user groups.
+          </p>
+          <div class="featured-tech">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">User Research</span>
+            <span class="tech-tag">Wireframing</span>
+            <span class="tech-tag">Prototyping</span>
+            <span class="tech-tag">Accessibility</span>
+          </div>
+          <div class="featured-links">
+            <a href="#projects" class="btn btn-primary btn-magnetic">
+              View All Projects <span class="btn-arrow">→</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost btn-magnetic">
+              Hire Me <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-glow"></div>
+
+  <!-- ═══════════════════════════════════════════
+       EDUCATION
+       ═══════════════════════════════════════════ -->
+  <section class="section" id="education">
+    <div class="section-aurora"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="section-label-line"></span> My Journey
+        </div>
+        <h2 class="section-title">Education &amp;<br><span class="accent">Academic Foundation</span></h2>
+        <p class="section-subtitle">
+          My academic journey in Computer Science &amp; Engineering, building the
+          technical and analytical skills that power my design and development work.
+        </p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline">
+        <div class="timeline-line">
+          <div class="timeline-line-fill"></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot-wrapper"><div class="timeline-dot"></div></div>
+          <div class="timeline-card" style="flex:1;max-width:calc(50% - 30px);">
+            <span class="timeline-year">2021 — 2025</span>
+            <h3>Bachelor of Technology — Computer Science &amp; Engineering</h3>
+            <h4>🎓 CGPA: 8.0 / 10</h4>
+            <p>
+              Pursuing a B.Tech in Computer Science &amp; Engineering with a focus on
+              software development, human-computer interaction, and modern web technologies.
+              Developed multiple real-world projects spanning machine learning, full-stack
+              web development, and UI/UX design. Actively participating in hackathons,
+              coding challenges, and design workshops throughout the academic programme.
+            </p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Computer Science</span>
+              <span class="timeline-tag">HCI</span>
+              <span class="timeline-tag">Machine Learning</span>
+              <span class="timeline-tag">Web Development</span>
+              <span class="timeline-tag">UI/UX Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications & Skills Highlights -->
+      <div style="margin-top:clamp(48px,8vh,96px);">
+        <div class="section-header">
+          <div class="section-label">
+            <span class="section-label-line"></span> Credentials
+          </div>
+          <h2 class="section-title">Technical <span class="accent">Proficiencies</span></h2>
+        </div>
+
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon">🎨</div>
+            <h4>UI/UX Design &amp; Figma</h4>
+            <p>End-to-end design process expertise — user research, wireframing, high-fidelity prototyping, design systems, and usability testing using Figma and Canva.</p>
+            <span class="cert-year">Advanced</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🌐</div>
+            <h4>Front-End Development</h4>
+            <p>Strong foundation in HTML5, CSS3, and JavaScript for building responsive, accessible, and performant web interfaces with modern best practices.</p>
+            <span class="cert-year">Advanced</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">☕</div>
+            <h4>Java &amp; Object-Oriented Programming</h4>
+            <p>Solid understanding of Java, OOP principles, data structures, and algorithms — enabling structured problem-solving and scalable software design.</p>
+            <span class="cert-year">Intermediate</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">⚙️</div>
+            <h4>Pega Platform Development</h4>
+            <p>Experience with Pega application development covering case management, workflow automation, data integration, and enterprise solutions architecture.</p>
+            <span class="cert-year">Intermediate</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🐍</div>
+            <h4>Python &amp; Machine Learning</h4>
+            <p>Proficiency in Python programming, data analysis, and machine learning — applied in academic projects including classification and detection systems.</p>
+            <span class="cert-year">Intermediate</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🗄️</div>
+            <h4>SQL &amp; Database Design</h4>
+            <p>Competence in SQL querying, relational database design, normalisation, and data manipulation — essential for data-driven design and full-stack development.</p>
+            <span class="cert-year">Intermediate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-glow"></div>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS
+       ═══════════════════════════════════════════ -->
+  <section class="section" id="projects" style="background:var(--bg-primary);border-top:1px solid var(--glass-border);">
+    <div class="section-aurora"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="section-label-line"></span> Portfolio
+        </div>
+        <h2 class="section-title">Projects &amp;<br><span class="accent">Case Studies</span></h2>
+        <p class="section-subtitle">
+          A curated collection of development projects and UI/UX case studies — from
+          machine learning systems to award-worthy interface designs.
+        </p>
+      </div>
+
+      <!-- Filter -->
+      <div class="projects-filter">
+        <button class="filter-pill active" data-filter="all">All Work</button>
+        <button class="filter-pill" data-filter="uiux">UI/UX Design</button>
+        <button class="filter-pill" data-filter="dev">Development</button>
+        <button class="filter-pill" data-filter="system">Design System</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="projects-grid">
+
+        <!-- ── UI/UX: MindWell ── -->
+        <div class="project-card" data-category="uiux">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#1a1a2e,#16213e);">
+            <img src="asset/mindwell.png" alt="MindWell — AI Mental Health Companion App Mockup" loading="lazy">
+            <div class="project-thumb-overlay">
+              <a href="#featured" class="project-link-btn" title="View Case Study">📄</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">UI/UX · Mobile App · AI</span>
+            <h3>MindWell — AI Mental Health Companion</h3>
+            <p>
+              <strong>Problem:</strong> Young adults avoid seeking mental health support due to stigma and cost.<br>
+              <strong>Process:</strong> User interviews → Empathy mapping → Lo-fi wireframes → 3 usability testing rounds → Hi-fi Figma prototype.<br>
+              <strong>Tools:</strong> Figma, Canva, Google Forms.<br>
+              <strong>Outcome:</strong> 92% task-completion rate; WCAG AA compliant; 30-second crisis-response flow.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">User Research</span>
+              <span class="tech-tag">Prototyping</span>
+              <span class="tech-tag">Accessibility</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── UI/UX: Mobile Banking Redesign ── -->
+        <div class="project-card" data-category="uiux">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#0f2027,#203a43);">
+            <img src="asset/securepay.png" alt="SecurePay — Mobile Banking App Redesign Mockup" loading="lazy">
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-link-btn" title="View Case Study">📄</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">UI/UX · Mobile App · Fintech</span>
+            <h3>SecurePay — Mobile Banking App Redesign</h3>
+            <p>
+              <strong>Problem:</strong> An existing banking app suffered from a 62% onboarding abandonment rate and poor accessibility for visually impaired users.<br>
+              <strong>Process:</strong> Heuristic evaluation → Competitive analysis of 5 fintech apps → User journey mapping → Wireframing → Accessibility-first interactive prototype.<br>
+              <strong>Tools:</strong> Figma, Canva, Maze for usability testing.<br>
+              <strong>Outcome:</strong> Reduced onboarding from 8 steps to 4; achieved WCAG AA compliance; estimated 40% improve­ment in task efficiency.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">Wireframing</span>
+              <span class="tech-tag">Accessibility</span>
+              <span class="tech-tag">User Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── UI/UX: E-Commerce UX Redesign ── -->
+        <div class="project-card" data-category="uiux">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#1a002e,#2d0050);">
+            <img src="asset/shopverse.png" alt="ShopVerse — E-Commerce UX Redesign Mockup" loading="lazy">
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-link-btn" title="View Case Study">📄</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">UI/UX · Web Design · E-Commerce</span>
+            <h3>ShopVerse — E-Commerce UX Redesign</h3>
+            <p>
+              <strong>Problem:</strong> A mid-sized e-commerce platform experienced a 68% cart-abandonment rate and poor mobile conversion.<br>
+              <strong>Process:</strong> Analytics audit &amp; funnel analysis → User surveys (100+ respondents) → Card sorting for navigation → Lo-fi wireframes → Responsive hi-fi prototype (desktop, tablet, mobile).<br>
+              <strong>Tools:</strong> Figma, Canva, Google Analytics data review.<br>
+              <strong>Outcome:</strong> Streamlined checkout to single-page flow; redesigned product cards with quick-view; estimated 25% reduction in cart abandonment.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">Canva</span>
+              <span class="tech-tag">Responsive Design</span>
+              <span class="tech-tag">UX Research</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── UI/UX: Analytics Dashboard ── -->
+        <div class="project-card" data-category="system">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#0a1628,#162447);">
+            <img src="asset/insightflow.png" alt="InsightFlow — Analytics Dashboard UI Mockup" loading="lazy">
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-link-btn" title="View Case Study">📄</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">UI/UX · Dashboard · Design System</span>
+            <h3>InsightFlow — Analytics Dashboard UI</h3>
+            <p>
+              <strong>Problem:</strong> Business analysts spent 15+ minutes navigating complex data to generate a single report, leading to low platform adoption.<br>
+              <strong>Process:</strong> Stakeholder interviews → Information architecture mapping → Component library in Figma → Data visualisation design → Dark/light mode prototype with drag-and-drop widgets.<br>
+              <strong>Tools:</strong> Figma, Canva for presentation assets.<br>
+              <strong>Outcome:</strong> Modular dashboard reducing report time to under 3 minutes; 40+ reusable components; customisable widget layout system.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">Design System</span>
+              <span class="tech-tag">Data Viz</span>
+              <span class="tech-tag">Components</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── DEV: Phishing Detection ── -->
+        <div class="project-card" data-category="dev">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#1a0000,#3d0000);">
+            <img src="asset/phishing.png" alt="Phishing Website Detection System Mockup" loading="lazy">
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-link-btn" title="View Project">📄</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Development · Machine Learning · Security</span>
+            <h3>Phishing Website Detection — Extreme Learning Machine</h3>
+            <p>
+              <strong>Problem:</strong> Traditional phishing detection methods suffered from low accuracy and high false-positive rates, leaving users vulnerable to increasingly sophisticated attacks.<br>
+              <strong>Process:</strong> Dataset analysis &amp; feature engineering → Extreme Learning Machine (ELM) classifier implementation → Benchmarking against SVM, Random Forest, and Neural Networks.<br>
+              <strong>Tools:</strong> Python, Scikit-learn, NumPy, Pandas, Jupyter Notebook.<br>
+              <strong>Outcome:</strong> Achieved a significant improvement in detection accuracy over baseline models; reduced false-positive rate; findings documented in academic report.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">ELM</span>
+              <span class="tech-tag">Data Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── DEV: Leather Classification ── -->
+        <div class="project-card" data-category="dev">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#1a1a0a,#2e2e0a);">
+            <img src="asset/leather.png" alt="Leather Classification DNN CNN System Mockup" loading="lazy">
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-link-btn" title="View Project">📄</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Development · Deep Learning · Classification</span>
+            <h3>Leather Classification — DNN &amp; CNN</h3>
+            <p>
+              <strong>Problem:</strong> Manual leather quality classification in manufacturing is time-consuming, inconsistent, and prone to human error, causing quality control inefficiencies.<br>
+              <strong>Process:</strong> Image dataset collection &amp; preprocessing → DNN and CNN model architecture design → Hyperparameter tuning &amp; cross-validation → Comparative analysis.<br>
+              <strong>Tools:</strong> Python, TensorFlow/Keras, NumPy, OpenCV, Matplotlib.<br>
+              <strong>Outcome:</strong> CNN model outperformed DNN with superior texture feature extraction; achieved measurable accuracy improvement over manual inspection methods.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">DNN</span>
+              <span class="tech-tag">Image Classification</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── DEV: Local Service Finder ── -->
+        <div class="project-card" data-category="dev">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#001a0a,#003d1a);">
+            <img src="asset/localconnect.png" alt="LocalConnect Service Finder Platform Mockup" loading="lazy">
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-link-btn" title="View Project">📄</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Full-Stack · Web Platform · UI/UX</span>
+            <h3>LocalConnect — Local Service Finder Platform</h3>
+            <p>
+              <strong>Problem:</strong> Finding reliable local service providers was fragmented across platforms with no unified, trustworthy search experience for users.<br>
+              <strong>Process:</strong> User needs analysis → Database schema design (SQL) → UI/UX design in Figma → Front-end development (HTML, CSS, JS) → Search, filter, ratings, and booking system.<br>
+              <strong>Tools:</strong> HTML, CSS, JavaScript, SQL, Figma for UI design.<br>
+              <strong>Outcome:</strong> Increased user engagement by 35% through intuitive search and filtering; implemented real-time availability indicators and review system.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">HTML/CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Figma</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-glow"></div>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+       ═══════════════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="section-aurora"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="section-label-line"></span> Get in Touch
+        </div>
+        <h2 class="section-title">Let's Create<br>Something <span class="accent">Remarkable</span></h2>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-left">
+          <h3 class="contact-heading">
+            Have a project in mind?<br>
+            <span class="accent">Let's talk.</span>
+          </h3>
+          <p class="contact-text">
+            I am actively seeking international internship opportunities in UI/UX design
+            and front-end development. Whether you have a project, a question, or simply
+            wish to connect — I would be delighted to hear from you and explore how we
+            might collaborate to build something meaningful.
+          </p>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📧</div>
+              <span>venkatagowtham193@gmail.com</span>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📱</div>
+              <span>+91-9392365524</span>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <span>Andhra Pradesh, India · Open to International Relocation</span>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🌐</div>
+              <span>Available for Remote &amp; On-Site Positions</span>
+            </div>
+          </div>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/venkatagowthamnaik-nunavathu-2540212a3/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn" style="cursor:pointer;">in</a>
+            <a href="mailto:venkatagowtham193@gmail.com" class="social-btn" aria-label="Email" style="cursor:pointer;">✉</a>
+            <a href="#" class="social-btn" aria-label="GitHub" style="cursor:pointer;">Gh</a>
+            <a href="#" class="social-btn" aria-label="Behance" style="cursor:pointer;">Be</a>
+            <a href="#" class="social-btn" aria-label="Dribbble" style="cursor:pointer;">Dr</a>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <input type="text" placeholder="Your Name" required id="contact-name">
+              </div>
+              <div class="form-field">
+                <input type="email" placeholder="Your Email" required id="contact-email">
+              </div>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="Subject" id="contact-subject">
+            </div>
+            <div class="form-field">
+              <textarea placeholder="Tell me about your project or opportunity..." rows="5" required id="contact-message"></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary btn-magnetic" id="contact-submit">
+                Send Message <span class="btn-arrow">→</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">
+        © 2025 <span class="accent">Nunavathu Venkata Gowtham Naik</span> · Designed with passion, crafted with precision.
+      </p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ SCRIPTS ═══ -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

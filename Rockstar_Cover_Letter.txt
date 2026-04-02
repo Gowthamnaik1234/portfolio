@@ -1,0 +1,75 @@
+Nunavathu Venkata Gowtham Naik
+Andhra Pradesh, India
+Email: venkatagowtham193@gmail.com
+Phone: +91-9392365524
+LinkedIn: https://www.linkedin.com/in/venkatagowthamnaik-nunavathu-2540212a3/
+
+Hiring Manager
+Rockstar Games - Quality Assurance
+Bengaluru, Karnataka, India
+
+Re: Associate QA Tester - Game Functionality
+
+Dear Hiring Team,
+
+I am writing to express my strong interest in the Associate QA Tester - Game Functionality position at Rockstar Games, Bengaluru. As a lifelong gamer who has played through the entire GTA series and a fresh Computer Science graduate with hands-on experience in testing, bug detection, and cross-platform development, I am confident I can contribute meaningfully to Rockstar's world-class QA team from day one.
+
+
+DEEP GAMING EXPERIENCE - ROCKSTAR & BEYOND
+
+I have been an avid gamer for years, with extensive hands-on experience across Rockstar's full catalogue and the wider games industry:
+
+- Grand Theft Auto Series: Played every major title - GTA III, GTA Vice City, GTA San Andreas, GTA IV, GTA V, and hundreds of hours in GTA Online. I have an intimate understanding of Rockstar's open-world mechanics - mission scripting, vehicle physics, NPC behaviour, wanted-level systems, weapon handling, map boundaries, and multiplayer session dynamics.
+
+- Red Dead Redemption 2: Experienced the game's hunting systems, honour mechanics, camp interactions, and environmental detail - giving me a sharp eye for the level of polish Rockstar demands.
+
+- Call of Duty Series: Played across multiple titles (Modern Warfare, Warzone, Black Ops), with deep knowledge of FPS mechanics - gunplay balancing, matchmaking, respawn logic, killstreak systems, and competitive multiplayer stability.
+
+- Other Titles: Experienced across multiple genres and platforms - RPGs, racing, sports, and battle royale - giving me a broad understanding of game mechanics, UI patterns, and common bugs across different game types.
+
+This gaming background means I naturally notice inconsistencies - a texture that loads late, a physics collision that feels off, a UI element that clips, an audio cue that triggers at the wrong moment. I don't just play games; I analyse how they work.
+
+
+BUG DETECTION & ANALYTICAL SKILLS
+
+My B.Tech in Computer Science & Engineering (CGPA 8.0) has given me a strong technical foundation for structured testing and bug reporting:
+
+1. Phishing Website Detection System (Machine Learning)
+Built an intelligent detection system that identifies malicious websites by analysing URL features, page structures, and behavioural patterns. Required systematic test case design - testing edge cases, false positives, and boundary conditions across thousands of data points.
+QA Relevance: Mirrors the structured approach of writing comprehensive test plans, reproducing issues consistently, and documenting results with precision.
+
+2. Leather Quality Classification (CNN vs DNN)
+Trained and compared two deep learning models, requiring detailed accuracy tracking, version-controlled test runs, and regression testing when parameters changed.
+QA Relevance: Directly maps to regression testing - verifying that fixes don't introduce new issues, comparing build-over-build quality, and documenting reproducible steps.
+
+3. LocalConnect - Full-Stack Web Platform
+Developed and manually tested a complete web platform across desktop, tablet, and mobile - validating search filters, user ratings, real-time availability, and responsive layouts.
+QA Relevance: Hands-on experience with cross-platform testing, identifying UI/UX bugs, testing user flows end-to-end, and ensuring consistent behaviour across different screen sizes and devices.
+
+4. UI/UX Case Studies (4 Projects - Figma)
+Designed and conducted usability testing with 25+ participants across multiple projects, documenting issues, tracking task-completion rates, and iterating based on findings.
+QA Relevance: Usability testing is essentially QA for design - identifying issues, reproducing them, writing clear reports, and verifying fixes in subsequent iterations.
+
+
+TECHNICAL SKILLS ALIGNED TO THIS ROLE
+
+- Gaming Knowledge: 10+ years - full GTA series, Call of Duty franchise, RDR2, and 50+ titles across genres
+- Current-Gen Consoles & PC: Strong knowledge of PC gaming hardware, console generations, performance considerations
+- PC & Microsoft Office: Proficient - Word, Excel, PowerPoint for documentation and bug tracking
+- Written English: Professional standard - experienced in technical writing and report documentation
+- Bug Reporting: Academic project experience with systematic issue tracking, reproduction steps, and test documentation
+- Programming: Python, Java, SQL, HTML, CSS, JavaScript - able to understand technical systems in depth
+- Adaptability: Quick learner - picked up Figma, Pega, ML frameworks, and multiple web technologies independently
+- Teamwork: Collaborative team projects throughout B.Tech; comfortable in close-knit, fast-paced environments
+
+
+WHY ROCKSTAR?
+
+Rockstar creates experiences that define generations. From the first time I explored Liberty City to the hundreds of hours I have spent in Los Santos, your games have shaped how I understand interactive entertainment. The idea of contributing to that level of quality - of being part of the team that ensures every mission, every mechanic, every interaction meets Rockstar's legendary standard - is the most exciting opportunity I can imagine.
+
+I am fully committed to the in-office role in Bengaluru and ready to relocate immediately. I am eager to learn your internal tools, systems, and processes, and to bring my analytical mindset, gaming expertise, and fresh technical perspective to the QA team.
+
+Thank you for considering my application. I would be thrilled to discuss how my skills and passion align with Rockstar's vision.
+
+Warm regards,
+Nunavathu Venkata Gowtham Naik
